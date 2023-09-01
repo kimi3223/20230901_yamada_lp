@@ -1,0 +1,603 @@
+
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: white;
+    color: #000;
+    font-size: 0.875rem;
+}
+
+.header {
+    height: 40px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    text-decoration: none
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+.logo {
+    margin-right: auto;
+    height: auto;
+    width: 15%;
+}
+
+.logo p {
+    display: block;
+    text-decoration: none;
+}
+
+.nav {
+    text-decoration: none;
+}
+
+.header .inner ul {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.header .inner li {
+    margin-right: 10%;
+    text-decoration: none;
+    color: #555555;
+}
+
+.header .inner li:last-child {
+    margin-right: 150px;
+}
+
+.header .contact {
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.75rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.main-visual {
+    margin-bottom: 120px;
+    display: flex;
+}
+
+/*
+メインビジュアルを画面の高さに合わせる
+headerの高さが80pxあるので、100vhから80px分だけマイナスする
+*/
+.main-visual {
+    position: relative;
+}
+.img-first {
+    margin: 0 0 0 auto;
+    display: block;
+    width: 65%;
+    z-index: -1;
+}
+
+
+.main-visual h1 {
+    position: absolute;
+    top: 10%;
+    transform: translate(-40%);
+    right: 0;
+    width: 55%;
+    line-height: 1.8;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    color: #AA336A;
+    padding: 30px;
+}
+
+.font_test {
+    color: #008888;
+}
+.font_test2 {
+    color: #008888;
+}
+
+.main-visual h4 {
+    position: absolute;
+    top: 50%;
+    transform: translate(-40%);
+    right: 0;
+    width: 55%;
+    line-height: 1.8;
+    font-size: 20px;
+    color: #AA336A;
+    padding: 30px;
+}
+
+.main-visual p {
+    position: absolute;
+    top: 60%;
+    transform: translate(-40%);
+    right: 0;
+    width: 55%;
+    line-height: 1.8;
+    font-size: 15px;
+    color: black;
+    padding: 30px;
+}
+
+.section-news {
+    margin-bottom: 120px;
+    margin-left: 20%;
+}
+
+.section-news p {
+    font-family: 'Amatic SC', cursive;
+    color: #AA336A;
+    margin: 10px 10px 10px 0;
+}
+
+.section-news time {
+    font-family: serif;
+    color: #555555;
+    margin: 10px 10px 10px 0;
+}
+
+.section-news h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.news-list ul p {
+    display: flex;
+    align-items: center;
+}
+
+.news-list a {
+    color: #555555;
+}
+
+.news-list ul {
+    display: flex;
+}
+
+.news-list li {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.news-list p {
+    color: white;
+}
+
+.news-btn {
+    width: 100px;
+    padding: 5px 0;
+    color: #fff;
+    border-radius: 30px;
+    background: #AA336A;
+    text-align: center;
+    margin: 100px auto 0;
+    display: block;
+}
+
+
+.section-about {
+    background-color: #f0f0f0;
+}
+
+.about {
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+
+.about .image {
+    width: 450px;
+    margin: 5%;
+    padding: 0;
+}
+
+.about .image img {
+    width: 80%;
+    height: 80%;
+}
+
+.about .text {
+    margin: 5%;
+    padding: 0;
+    font-size: 15px;
+}
+
+.section-about p {
+    text-align: center;
+    color: #AA336A;
+    font-family: 'Amatic SC', cursive;
+    padding: 10px 0 0 0;
+}
+
+.section-about h2 {
+    text-align: center;
+    margin: 10px 10px 20px 10px;
+    font-size: 20px;
+    color: #555555;
+}
+
+.about-picture {
+    width: 50%;
+    height: 20%;
+}
+
+
+.flex {
+    background-color: #AA336A;
+    margin: 20px 70px 20px 70px;
+}
+
+.box1 h5 {
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.box1 a {
+    color: white;
+}
+
+
+.section-service p {
+    margin-top: 5%;
+    margin-left: 15%;
+    color: #AA336A;
+    font-family: 'Amatic SC', cursive;
+}
+
+.section-service h2 {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 15%;
+    font-size: 20px;
+}
+
+.service-picture .flex {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.box1 img {
+    width: 50%;
+    height: 50%;
+    margin-left: 120px;
+}
+
+
+.box2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    background-color: #d29cb5;
+}
+.box2 img {
+    width: 100%;
+    height: 100%;
+}
+.box-top {
+    color: white;
+    margin-top: 30px;
+}
+
+.box3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    background-color: #ecccdb;
+}
+.box3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-btm {
+    color: white;
+    margin-top: 30px;
+}
+
+.tag {
+    display: flex;
+}
+
+.tag .card__date {
+    color: #555555;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tag .card__tag {
+    color: #555555;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 5% 0 0 30px;
+}
+
+.section-blog p {
+    margin-top: 5%;
+    margin-left: 10%;
+    color: #AA336A;
+    font-family: 'Amatic SC', cursive;
+}
+
+.section-blog h2 {
+    margin: 10px 0 10px 10%;
+    font-size: 15px;
+    color: #555555;
+}
+
+.card__content h3 {
+    color: #555555;
+    margin: 5px;
+}
+
+.flex__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.practice__card {
+    width: 80%;
+    border-radius: 30px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.practice__card:first-child {
+    margin-bottom: 0;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.practice__card:last-child {
+    margin-bottom: 0;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+
+.card__img img {
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+
+.card__ttl {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.card__cat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #AA336A;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    margin: 0;
+    border-top-left-radius: 30px;
+}
+
+.tag {
+    font-size: 14px;
+    text-align: right;
+    margin: 30px;
+}
+
+
+.card__tag {
+    display: inline-block;
+    color: #008888;
+}
+
+
+.card__date {
+    display: inline-block;
+    margin-left: 20px;
+    color: #888888;
+}
+
+/* レスポンシブ (768px以上)*/
+@media screen and (min-width: 768px) {
+    .practice__card {
+        width: 40%;
+    }
+}
+
+/* レスポンシブ (1000px以上)*/
+@media screen and (min-width: 1000px) {
+    .practice__card {
+        width: 25%;
+        margin-bottom: 0;
+    }
+}
+
+.blog-button {
+    width: 200px;
+    height: 30px;
+    padding: 10px 0;
+    color: #AA336A;
+    border: solid 2px #AA336A;
+    font-weight: bold;
+    border-radius: 30px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 5px #AA336A(255, 0, 0, 0.2);
+    margin: 50px auto 0;
+    display: block;
+}
+
+.section-company {
+    margin: 5%;
+}
+.section-company P {
+    margin-left: 20%;
+    color: #AA336A;
+    font-family: 'Amatic SC', cursive;
+}
+
+.section-company h2 {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    color: #555555;
+}
+
+.company .info {
+    margin-bottom: 10px;
+}
+.info dl {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 0 10% 10% 10%;
+}
+
+.info dt {
+    float: left;
+    width: 30%;
+    height: 3em;
+    clear: both;
+    background-color: #C0C0C0;
+    border-bottom: 1px solid #ccc;
+}
+
+.info dd {
+    float: right;
+    width: 70%;
+    height: 3em;
+    background-color: whitesmoke;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.section-business {
+    position: relative;
+}
+
+.section-business p {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    font-size: 30px;
+    color: white;
+}
+
+.section-business h6 {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    font-size: 30px;
+    color: white;
+}
+
+.section-business img {
+    width: 100%;
+    height: 20em;
+}
+
+.section-business h3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #555555;
+}
+
+.section-business a {
+    width: 200px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #ff5800, #8b00be);
+    text-align: center;
+    box-shadow: 0 5px 0 rgba(255, 0, 0, 0.2);
+    margin: 1% 40% 5% 40%;
+    display: block;
+}
+
+.wrap {
+    display: flex;
+    /*--横並び指定--*/
+
+    /*--下記は自由--*/
+    text-align: center;
+    color: #AA336A;
+    font-weight: bold;
+}
+
+.wrap .box-b {
+    flex-grow: 1;
+    /*--幅を指定--*/
+    height: 40px;
+    line-height: 140px;
+    background-color: white;
+}
+
+.wrap .box-a {
+    flex-grow: 1;
+    position: relative;
+    /*--幅を指定--*/
+    height: 40px;
+    line-height: 140px;
+    /*--AとBの余白--*/
+    margin-right: 2em;
+    background-color: white;
+    border-right: #AA336A;
+}
+
+.wrap .box-a::after {
+    position: absolute;
+    /*--positionを追加--*/
+    top: 0;
+    left: 100%;
+    margin: 0 1rem;
+    content: "";
+    width: 1px;
+    /*--縦線の太さ(幅)--*/
+    height: 100%;
+    background-color: #AA336A;
+    /*--縦線の色--*/
+}
+
+.footer {
+    text-align: center;
+    background-color: #ccc;
+    padding: 10px 0;
+}
