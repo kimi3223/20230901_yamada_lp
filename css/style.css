@@ -41,10 +41,6 @@ img {
     text-decoration: none;
 }
 
-.nav {
-    text-decoration: none;
-}
-
 .header .inner ul {
     display: flex;
     align-items: center;
@@ -136,8 +132,9 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 }
 
 .section-news {
-    margin-bottom: 120px;
-    margin-left: 20%;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
 }
 
 .section-news p {
@@ -154,8 +151,8 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 
 .section-news h2 {
     font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    width: auto;
+    margin: 5px auto;
 }
 
 .news-list ul p {
@@ -167,14 +164,26 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     color: #555555;
 }
 
-.news-list ul {
-    display: flex;
+.section-news ul {
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid #888888;
 }
 
 .news-list li {
     display: flex;
     align-items: center;
     flex-direction: row;
+    margin: auto;
+    border-bottom: 1px solid #888888;
+}
+
+.news-list li:first-child {
+    border-top: 2px solid #888888;
+}
+
+.news-list li:last-child {
+    border-bottom: 1px solid #888888;
 }
 
 .news-list p {
@@ -254,6 +263,8 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 
 .box1 a {
     color: white;
+    text-align: center;
+    margin: auto;
 }
 
 
@@ -272,6 +283,7 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 }
 
 .service-picture .flex {
+    width: auto;
     display: grid;
     grid-template-rows: 200px 200px;
     grid-template-columns: 1fr 1fr;
@@ -282,9 +294,9 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     grid-row: 1/3;
 }
 .box1 img {
-    width: 50%;
+    width: 500px;
     height: 50%;
-    margin-left: 120px;
+    margin: auto;
 }
 
 
@@ -293,14 +305,16 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     grid-row: 1/2;
     display: flex;
     background-color: #d29cb5;
+    width: 500px;
+    margin: auto;
 }
 .box2 img {
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 200px;
 }
 .box-top {
     color: white;
-    margin-top: 30px;
+    margin: auto;
 }
 
 .box3 {
@@ -310,13 +324,13 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     background-color: #ecccdb;
 }
 .box3 img {
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 200px;
 }
 
 .box-btm {
     color: white;
-    margin-top: 30px;
+    margin: auto;
 }
 
 .tag {
@@ -376,7 +390,7 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 
 .practice__card:first-child {
     margin-bottom: 0;
-    margin-left: 40px;
+    margin-left: 85px;
     margin-right: 20px;
 }
 
@@ -480,8 +494,9 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     color: #555555;
 }
 
-.company .info {
+.company dl .info {
     margin-bottom: 10px;
+    width: auto;
 }
 .info dl {
     display: flex;
@@ -508,14 +523,16 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     border-top: 1px solid #ccc;
 }
 
-.section-business {
-    position: relative;
+.section_business  ul {
+    display: flex;
+    width: 100%;
+    margin: 10px 0 0 0;
 }
 
 .section-business p {
     position: absolute;
-    top: 60%;
-    left: 10%;
+    top: 50%;
+    left: 20%;
     font-size: 30px;
     color: white;
 }
@@ -523,24 +540,56 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 .section-business h6 {
     position: absolute;
     top: 60%;
-    right: 10%;
+    right: 20%;
     font-size: 30px;
     color: white;
 }
 
 .section-business img {
-    width: 100%;
-    height: 20em;
+    width: 500px;
+    height: 250px;
 }
 
-.section-business h3 {
+.section-business ul {
+    display: flex;
+    width: 300px;
+    height: 100px;
+    margin: auto;
+}
+
+.section-business ul li {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.section-business ul li img {
+    width: 300px;
+    height: 100px;
+}
+
+.section-business ul li p {
+    position: absolute;
+    color: white;
+}
+
+.section-business ul li h6 {
+    position: absolute;
+    color: white;
+}
+
+.section-company .company dl {
+    width: 600px;
+    margin: auto;
+}
+
+.section_business h3 {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
     color: #555555;
 }
 
-.section-business a {
+.contact__btn .btn {
     width: 200px;
     padding: 10px;
     color: #fff;
