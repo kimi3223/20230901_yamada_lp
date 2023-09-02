@@ -373,13 +373,6 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     flex-wrap: wrap;
 }
 
-
-.wrap {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-
 .practice__card {
     width: 80%;
     border-radius: 30px;
@@ -477,46 +470,45 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 }
 
 .section-company {
-    margin: 5%;
+    margin: 5% 25%;
+    text-align: center;
 }
 .section-company P {
-    margin-left: 20%;
     color: #AA336A;
     font-family: 'Amatic SC', cursive;
+    text-align: left;
 }
 
 .section-company h2 {
     text-align: left;
     margin-top: 20px;
-    margin-left: 20%;
     margin-bottom: 5%;
     font-size: 20px;
     color: #555555;
 }
-
-.company dl .info {
-    margin-bottom: 10px;
-    width: auto;
-}
-.info dl {
-    display: flex;
-    justify-content: flex-start;
-    width: 80%;
-    margin: 0 10% 10% 10%;
+.company {
+    text-align: center;
 }
 
-.info dt {
-    float: left;
+.company .info {
+    width: 100%;
+}
+
+.info tr {
+    border: 1px solid #888888;
+}
+
+.info th {
+    text-align: left;
     width: 30%;
     height: 3em;
-    clear: both;
     background-color: #C0C0C0;
     border-bottom: 1px solid #ccc;
 }
 
-.info dd {
-    float: right;
-    width: 70%;
+.info td {
+    text-align: left;
+    width: 100%;
     height: 3em;
     background-color: whitesmoke;
     border-bottom: 1px solid #ccc;
@@ -524,17 +516,47 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 }
 
 .flex-item {
+    position: relative;
     display: flex;
+    width: 50%;
 }
 .flex-item a {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    font-size: 30px;
+    color: white;
+    background-image: url("img/recruit.png");
 }
 
+.flex-item2 {
+    display: flex;
+    width: 50%;
+}
 
-.section_business h3 {
+.flex-item2 a {
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    position: 0;
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    font-size: 30px;
+    color: white;
+    background-image: url("img/interview.png");
+}
+.section_business {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+h3 {
+    margin: 30px auto;
+    text-align: center;
     color: #555555;
 }
 
@@ -558,6 +580,11 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     text-align: center;
     color: #AA336A;
     font-weight: bold;
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .wrap .box-b {
