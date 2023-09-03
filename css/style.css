@@ -274,7 +274,7 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 
 .section-service p {
     margin-top: 5%;
-    margin-left: 15%;
+    margin-left: 20%;
     color: #AA336A;
     font-family: 'Amatic SC', cursive;
 }
@@ -282,7 +282,7 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 .section-service h2 {
     text-align: left;
     margin-top: 20px;
-    margin-left: 15%;
+    margin-left: 20%;
     font-size: 20px;
 }
 
@@ -396,7 +396,6 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 
 .practice__card:first-child {
     margin-bottom: 0;
-    margin-left: 85px;
     margin-right: 20px;
 }
 
@@ -582,10 +581,10 @@ h3 {
 }
 
 .contact__btn .btn {
-    padding: 10px;
+    padding: 15px;
     color: #fff;
     border-radius: 30px;
-    background: linear-gradient(90deg, #ff5800, #8b00be);
+    background: #AA336A url(img/mailicon.svg)no-repeat 20px center / 30px auto;
     text-align: center;
     box-shadow: 0 5px 0 rgba(255, 0, 0, 0.2);
     margin: 1% 40% 5% 40%;
@@ -605,6 +604,7 @@ h3 {
 .wrap {
     max-width: 1000px;
     margin: 0 auto;
+    padding-top: 2%;
 }
 
 .wrap .box-b {
