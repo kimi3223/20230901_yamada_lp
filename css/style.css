@@ -314,7 +314,7 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     grid-row: 1/2;
     display: flex;
     background-color: #d29cb5;
-    width: 500px;
+    width: 100%;
     margin: auto;
 }
 .box2 img {
@@ -324,7 +324,7 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 .box-top {
     color: white;
     margin: auto;
-    width: 50%;
+    width: 100%;
 }
 
 .box3 {
@@ -332,6 +332,8 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     grid-row: 2/3;
     display: flex;
     background-color: #ecccdb;
+    width: 100%;
+    margin: auto;
 }
 .box3 img {
     width: 250px;
@@ -341,6 +343,7 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 .box-btm {
     color: white;
     margin: auto;
+    width: 100%;
 }
 
 .tag {
