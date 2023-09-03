@@ -135,6 +135,7 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     width: 500px;
     height: 300px;
     margin: 0 auto;
+    padding-bottom: 10%;
 }
 
 .section-news p {
@@ -151,8 +152,9 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 
 .section-news h2 {
     font-size: 20px;
+    color: #555555;
     width: auto;
-    margin: 5px auto;
+    margin: 1% auto 5% auto;
 }
 
 .news-list ul p {
@@ -213,7 +215,7 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 }
 
 .about .image {
-    width: 450px;
+    width: 50%;
     margin: 5%;
     padding: 0;
 }
@@ -225,15 +227,17 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 
 .about .text {
     margin: 5%;
-    padding: 0;
+    padding: 2%;
     font-size: 15px;
+    width: 50%;
+    text-align: left;
 }
 
 .section-about p {
     text-align: center;
     color: #AA336A;
     font-family: 'Amatic SC', cursive;
-    padding: 10px 0 0 0;
+    padding-top: 3%;
 }
 
 .section-about h2 {
@@ -280,6 +284,12 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     margin-top: 20px;
     margin-left: 15%;
     font-size: 20px;
+}
+
+.service-picture {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 5%;
 }
 
 .service-picture .flex {
@@ -349,15 +359,18 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     margin: 5% 0 0 30px;
 }
 
+.section-blog {
+    background-color: #f0f0f0;
+}
 .section-blog p {
-    margin-top: 5%;
-    margin-left: 10%;
+    padding-top: 5%;
+    margin: 1% 0 0 15%;
     color: #AA336A;
     font-family: 'Amatic SC', cursive;
 }
 
 .section-blog h2 {
-    margin: 10px 0 10px 10%;
+    margin: 1% 0 0 15%;
     font-size: 15px;
     color: #555555;
 }
@@ -499,54 +512,62 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 }
 
 .info th {
+    padding-left: 5px;
     text-align: left;
     width: 30%;
     height: 3em;
     background-color: #C0C0C0;
     border-bottom: 1px solid #ccc;
+    vertical-align: middle;
 }
 
 .info td {
+    padding-left: 5px;
     text-align: left;
     width: 100%;
     height: 3em;
     background-color: whitesmoke;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
+    vertical-align: middle;
 }
 
 .flex-item {
     position: relative;
     display: flex;
     width: 50%;
+    background-image: url("img/recruit.png");
 }
 .flex-item a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     text-align: center;
     width: 100%;
     height: 300px;
     font-size: 30px;
     color: white;
-    background-image: url("img/recruit.png");
 }
 
 .flex-item2 {
+    position: relative;
     display: flex;
     width: 50%;
+    background-image: url("img/interview.png");
 }
 
 .flex-item2 a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
     text-align: center;
-    position: 0;
     margin: 0;
     width: 100%;
     height: 300px;
     font-size: 30px;
     color: white;
-    background-image: url("img/interview.png");
 }
 .section_business {
     display: flex;
@@ -561,7 +582,6 @@ h3 {
 }
 
 .contact__btn .btn {
-    width: 200px;
     padding: 10px;
     color: #fff;
     border-radius: 30px;
